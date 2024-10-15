@@ -108,11 +108,19 @@
                                 aria-haspopup="true" aria-expanded="false">Người dùng <span class="caret"></span></a>
                             <ul class="dropdown-menu animated zoomIn">
                                 <li><a href="mentor_ship_request.html">Danh sách yêu cầu</a></li>
-                                <li><a href="user.html">Tất cả người dùng</a></li>
+                                <li><a href="mentor.html">Người hướng dẫn</a></li>
                                 <li><a href="user_question.html">Bài viết người dùng</a></li>
                             </ul>
                         </li>
-                        <li><a href="contact_us.html">Liên hệ</a></li>
+                                                <li><a href="contact_us.html">Liên hệ</a></li>
+                        <li class="dropdown">
+                            <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button"
+                                aria-haspopup="true" aria-expanded="false">Cài đặt <span class="caret"></span></a>
+                            <ul class="dropdown-menu animated zoomIn">
+                                <li><a href="settings.html">Thông tin người dùng</a></li>
+                                <li><a href="mentorship_request.html">Yêu cầu hưỡng dẫn</a></li>
+                            </ul>
+                        </li>
                     </ul>
                 </div>
                 <!-- /.navbar-collapse -->
@@ -135,8 +143,8 @@
     <section class="google-map390">
         <div class="container">
             <iframe
-                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3648.3606635504457!2d90.31952411441043!3d23.876826289853003!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3755c23e9a9dbe81%3A0x62af421e71601a5f!2sDaffodil+International+University+-+Permanent+Campus+Library!5e0!3m2!1sen!2sbd!4v1510023951587"
-                width="100%" height="400" frameborder="0" style="border:0" allowfullscreen></iframe>
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3918.60994153052!2d106.80730807586164!3d10.841132857995175!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x31752731176b07b1%3A0xb752b24b379bae5e!2zVHLGsOG7nW5nIMSQ4bqhaSBo4buNYyBGUFQgVFAuIEhDTQ!5e0!3m2!1svi!2s!4v1728916779787!5m2!1svi!2s"
+                width="100%" height="400" frameborder="0" style="border:0" allowfullscreen></iframe>       
         </div>
     </section>
     <section class="main-content920">
@@ -147,17 +155,28 @@
                         <h4>Contact Us</h4>
                         <hr>
                         <form>
-                            <div class="username-part940">
-                                <span class="form-description43">User name* </span><input type="text" name="fname"
-                                    class="username029" placeholder="Enter your Name">
+                            <!-- Tên người dùng -->
+                            <div class="form-group row">
+                                <label class="col-md-3 col-form-label">Tên người dùng*</label>
+                                <div class="col-md-6">
+                                    <input type="text" name="fname" class="form-control" placeholder="Nhập Tên Của Bạn">
+                                </div>
                             </div>
-                            <div class="email-part320">
-                                <span class="form-description442">E-Mail* </span><input type="text" name="fname"
-                                    class="email30" placeholder="Enter Your Email">
+
+                            <!-- Email -->
+                            <div class="form-group row">
+                                <label class="col-md-3 col-form-label">E-Mail*</label>
+                                <div class="col-md-6">
+                                    <input type="email" name="email" class="form-control" placeholder="Nhập Email Của Bạn">
+                                </div>
                             </div>
-                            <div class="question-title39">
-                                <span class="form-description433">Question-Title* </span><input type="text" name="fname"
-                                    class="question-ttile32" placeholder="Write Your Question Title">
+
+                            <!-- Tiêu đề chuyên ngành -->
+                            <div class="form-group row">
+                                <label class="col-md-3 col-form-label">Tiêu đề*</label>
+                                <div class="col-md-6">
+                                    <input type="text" name="majorTitle" class="form-control" placeholder="Nhập Tiêu Đề">
+                                </div>
                             </div>
                             <div class="question-title39">
                                 <span class="form-description43313">Details* </span>
